@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API.Services", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.APIGateway", "Services.APIGateway\Services.APIGateway.csproj", "{9C1AEE4E-F4FC-4575-A8EA-15F3603A62B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIApp", "UIApp\UIApp.csproj", "{623FFF47-C1E9-4354-A324-C9CEA97C5E5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{9C1AEE4E-F4FC-4575-A8EA-15F3603A62B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1AEE4E-F4FC-4575-A8EA-15F3603A62B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1AEE4E-F4FC-4575-A8EA-15F3603A62B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623FFF47-C1E9-4354-A324-C9CEA97C5E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623FFF47-C1E9-4354-A324-C9CEA97C5E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623FFF47-C1E9-4354-A324-C9CEA97C5E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623FFF47-C1E9-4354-A324-C9CEA97C5E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

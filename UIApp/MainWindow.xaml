@@ -1,0 +1,27 @@
+﻿<Window x:Class="UIApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UIApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel>
+            <DataGrid SelectedItem="{Binding Contact,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                      ItemsSource="{Binding AllContacts}"
+                     >
+            </DataGrid>
+            <Button Name="GetAll" Click="GetAll_Click">Get All Contacts</Button>
+            <Button Name="Delete" Click="Delete_Click">Delete Contact</Button>
+        </StackPanel>
+        <StackPanel Width="400">
+            <TextBlock Text="Firstname"></TextBlock>
+            <TextBox x:Name="firstnameTxtbox" Text="{Binding Contact.Firstname,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBlock Text="Lastname"></TextBlock>
+            <TextBox x:Name="lastnameTxtbox" Text="{Binding Contact.Lastname,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Name="addContact" Click="addContact_Click">Add New Contact</Button>
+            <Button Name="updateContact" Click="updateContact_Click">Update Contact</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
